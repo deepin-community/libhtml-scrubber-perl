@@ -1,5 +1,176 @@
-template-repository (1.0-1) unstable; urgency=medium
+libhtml-scrubber-perl (0.19-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+  * Update standards version to 4.5.0, no changes needed.
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+  * Update standards version to 4.6.0, no changes needed.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 06 Dec 2022 15:17:13 +0000
+
+libhtml-scrubber-perl (0.19-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 0.19.
+  * Update years of upstream copyright.
+  * Remove build dependencies which are only needed in author tests.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 14 Nov 2019 20:14:39 +0100
+
+libhtml-scrubber-perl (0.17-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+
+  [ Florian Schlichting ]
+  * Import upstream version 0.17
+  * Update upstream metadata
+  * Drop build-dependency on M::B after switch to EU::MM
+  * Bump copyright years
+  * Add build-dependency on Test::Differences
+  * Declare compliance with Debian Policy 4.1.1
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 11 Nov 2017 14:34:29 +0100
+
+libhtml-scrubber-perl (0.15-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Axel Beckert ]
+  * Remove trailing blank lines from debian/{changelog,control}
+  * Fix tense in long package description.
+
+  [ gregor herrmann ]
+  * Import upstream version 0.15
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 31 Oct 2015 21:02:46 +0100
+
+libhtml-scrubber-perl (0.14-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update Module::Build dependency.
+  * Add debian/upstream/metadata.
+
+  * Import upstream version 0.14.
+  * Update years of upstream copyright.
+  * Remove version from libmodule-build-perl build dependency.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Add more build dependencies.
+    Three of the four are never used but their presence is checked for.
+  * Mark package as autopkgtest-able.
+  * Mention module name in long description.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 31 May 2015 14:04:05 +0200
+
+libhtml-scrubber-perl (0.11-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Update upstream copyright holders/years.
+  * Update build dependencies (Module::Build).
+  * Bump debhelper compatibility level to 8.
+  * Declare compliance with Debian Policy 3.9.4.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 22 Oct 2013 19:19:03 +0200
+
+libhtml-scrubber-perl (0.09-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Removed: XS-
+    Vcs-Svn fields.
+  * debian/watch: use dist-based URL.
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Nicholas Bamber ]
+  * Added myself to Uploaders
+  * New upstream release (Closes: #409672)
+  * Added debian/source/format
+  * Standardized watch file
+  * Updated standards version to 3.9.2
+  * Depersonalized long description
+  * Refreshed copyright
+  * Refreshed rules and upped debhelper versioned dependency
+  * Updated dependencies
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Fri, 15 Apr 2011 13:01:31 +0100
+
+libhtml-scrubber-perl (0.08-4) unstable; urgency=low
+
+  * New maintainer.
+  * Update debian/copyright.
+  * Upgrade to debhelper compatibility level 5.
+
+ -- Niko Tyni <ntyni@iki.fi>  Mon,  4 Dec 2006 23:34:10 +0200
+
+libhtml-scrubber-perl (0.08-3) unstable; urgency=low
+
+  * Moved debhelper to Build-Depends
+  * Switched to my debian.org email address throughout
+
+ -- Stephen Quinney <sjq@debian.org>  Wed, 21 Jun 2006 18:44:20 +0100
+
+libhtml-scrubber-perl (0.08-2) unstable; urgency=low
+
+  * debian/watch - Updated URL to stop lookups randomly failing.
+
+ -- Stephen Quinney <sjq@debian.org>  Sat, 11 Jun 2005 14:17:10 +0100
+
+libhtml-scrubber-perl (0.08-1) unstable; urgency=low
+
+  *  Inital release, closes: #256642.
+
+ -- Stephen Quinney <sjq@debian.org>  Fri,  2 Jul 2004 11:46:04 +0100
